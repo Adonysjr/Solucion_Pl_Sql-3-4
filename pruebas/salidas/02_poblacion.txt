@@ -1,0 +1,404 @@
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+4 rows updated.
+
+
+Commit complete.
+
+
+   LOCALES
+----------
+         9
+
+1 row selected.
+
+
+ EMPLEADOS
+----------
+         5
+
+1 row selected.
+
+
+     MESAS
+----------
+         4
+
+1 row selected.
+
+
+ PRODUCTOS
+----------
+         6
+
+1 row selected.
+
+
+   INSUMOS
+----------
+         8
+
+1 row selected.
+
+
+   RECETAS
+----------
+        15
+
+1 row selected.
+
+
+     STOCK
+----------
+         8
+
+1 row selected.
+
+
+  CLIENTES
+----------
+         2
+
+1 row selected.
+
+
+   PEDIDOS
+----------
+         4
+
+1 row selected.
+
+
+  DETALLES
+----------
+         7
+
+1 row selected.
+
+
+   BOLETAS
+----------
+         4
+
+1 row selected.
+
+
+     PAGOS
+----------
+         4
+
+1 row selected.
+
+
+MOVIMIENTOS_STOCK
+-----------------
+                4
+
+1 row selected.
+
+
+ ID_PEDIDO      TOTAL   ID_CANAL  ID_ESTADO ID_EXTERNO_DELIVERY
+---------- ---------- ---------- ---------- --------------------------------------------------
+         1      12400          1          4
+         2      13700          3          4 RAP-001
+         3       7500          2          4
+         4      12100          1          4
+
+4 rows selected.
+

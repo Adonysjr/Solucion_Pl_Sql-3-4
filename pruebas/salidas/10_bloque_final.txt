@@ -1,0 +1,179 @@
+
+==================================================
+SIMULACION DE OPERACION - Sabores Urbanos, local 1 - 27-10-2026 23:33
+==================================================
+
+>> Paso 1: Integracion externa: pedido delivery (Rappi)
+--- INTEGRACION EXTERNA: pedido SIM-RAP-20261027233309156 ---
+Pedido externo registrado correctamente. ID: 16
+Pedido 16 | detalles: 2 | total: $12400 | estado: 1
+
+>> Paso 2: Mesas: apertura del pedido de salon
+--- MESAS: apertura en mesa 3 ---
+Pedido de salon 17 creado | total $13700 | mesa 3: OCUPADA
+
+>> Paso 3: Stock por receta: confirmacion de ambos pedidos
+--- STOCK POR RECETA: confirmando pedidos 16 (delivery) y 17 (salon) ---
+Pedido 16 tiene 2 detalle(s). Insumos que necesita:
+Pan de hamburguesa   requiere      1 UN  | stock 28
+Carne de vacuno      requiere    180 GR  | stock 7390
+Queso cheddar        requiere     30 GR  | stock 2940
+Lechuga              requiere     25 GR  | stock 3950
+Tomate               requiere     40 GR  | stock 3920
+Papa                 requiere    250 GR  | stock 12000
+1 x Hamburguesa Clásica          -> Pan de hamburguesa   -1 UN
+1 x Hamburguesa Clásica          -> Carne de vacuno      -180 GR
+1 x Hamburguesa Clásica          -> Queso cheddar        -30 GR
+1 x Hamburguesa Clásica          -> Lechuga              -25 GR
+1 x Hamburguesa Clásica          -> Tomate               -40 GR
+1 x Papas Fritas                 -> Papa                 -250 GR
+Pedido 16 confirmado: 6 descuentos de insumo registrados.
+Movimientos SALIDA registrados para el pedido 16: 6
+Pedido 17 tiene 2 detalle(s). Insumos que necesita:
+Pechuga de pollo     requiere    220 GR  | stock 6000
+Papa                 requiere    250 GR  | stock 11750
+Bebida cola 500 ml   requiere      1 UN  | stock 50
+1 x Pollo Grill con Papas        -> Pechuga de pollo     -220 GR
+1 x Pollo Grill con Papas        -> Papa                 -250 GR
+1 x Bebida Cola 500 ml           -> Bebida cola 500 ml   -1 UN
+Pedido 17 confirmado: 3 descuentos de insumo registrados.
+Movimientos SALIDA registrados para el pedido 17: 3
+Total de salidas de stock de la simulacion: 9
+
+>> Paso 4: KDS: preparacion en cocina
+--- KDS: cocina del local 1 ---
+Pedido 16 | espera 0 min | preparacion 8 min | prioridad 8
+Pedido 17 | espera 0 min | preparacion 13 min | prioridad 13
+Capacidad disponible: 5
+ID PEDIDO:    17
+PUNTAJE:      13
+TOTAL PLATOS: 2
+-----------------------------
+UPDATE pedido id: 17 NUEVO ESTADO: PREPARANDO
+Capacidad disponible: 3
+-----------------------------
+ID PEDIDO:    16
+PUNTAJE:      8
+TOTAL PLATOS: 2
+-----------------------------
+UPDATE pedido id: 16 NUEVO ESTADO: PREPARANDO
+Capacidad disponible: 1
+-----------------------------
+Detalles en PREPARANDO: 4
+Detalles LISTO: 4 | pedidos en estado LISTO (trigger): 2
+
+>> Paso 5: Merma: perdida de insumo
+--- MERMA: perdida de insumo en local 1 ---
+Stock inicial de Lechuga: 3925 GR
+Merma registrada: 50 GR de Lechuga en local 1 - motivo: Deterioro durante almacenamiento
+Stock final de Lechuga: 3875 GR (bajo 50)
+Movimientos MERMA de hoy de Lechuga: 1
+Merma de hoy en local 1: $3,200 | KPI del dia: 24.73%
+
+>> Paso 6: Facturacion: pagos, boletas y DTE
+--- FACTURACION: pedidos 16 y 17 ---
+Pago registrado: $12400 - Pedido 16
+Boleta 6 emitida (AFECTA) - Neto: $10420 IVA: $1980 Total: $12400
+Boleta 6 -> estado DTE: ACEPTADA
+Pago registrado: $13700 - Pedido 17
+Boleta 7 emitida (AFECTA) - Neto: $11513 IVA: $2187 Total: $13700
+Boleta 7 -> estado DTE: ACEPTADA
+Pagos: 2 | boletas ACEPTADAS: 2 (6, 7)
+
+>> Paso 7: Mesas: cierre de la atencion de salon
+--- MESAS: cierre del pedido 17 ---
+Pedido 17 cerrado | duracion 0 min | mesa 3: LIBRE
+
+Simulacion completa. Pedido delivery 16 | pedido salon 17
+
+==================================================
+REPORTE CONSOLIDADO - pedidos 16 (delivery) y 17 (salon)
+==================================================
+
+--- 1. INTEGRACION EXTERNA ---
+Pedido 16 | externo SIM-RAP-20261027233309156 | canal RAPPI | total $12400 | estado LISTO
+1 x Hamburguesa Clásica      $8500
+1 x Papas Fritas             $3900
+
+--- 2. MESAS ---
+Pedido 17 | mesa 3 LIBRE | estado ENTREGADO | duracion 0 min
+ROTACION DE MESAS - Local 1 - 27-10-2026 (00:00 a 23:59)
+======================================================
+Pedido 8 - Mesa 1 - Duracion: 50 min
+Pedido 9 - Mesa 2 - Duracion: 35 min
+Pedido 10 - Mesa 3 - Duracion: 45 min
+Pedido 17 - Mesa 3 - Duracion: 0 min
+======================================================
+Duracion promedio de atencion: 32.5 min
+Rotacion de mesas del periodo: 1
+
+--- 3. STOCK POR RECETA ---
+STOCK POR RECETA - pedidos 16 y 17
+Pedido 16 | Pan de hamburguesa   -     1 UN  | $350
+Pedido 16 | Carne de vacuno      -   180 GR  | $2,160
+Pedido 16 | Queso cheddar        -    30 GR  | $300
+Pedido 16 | Lechuga              -    25 GR  | $100
+Pedido 16 | Tomate               -    40 GR  | $200
+Pedido 16 | Papa                 -   250 GR  | $500
+Pedido 17 | Pechuga de pollo     -   220 GR  | $1,760
+Pedido 17 | Papa                 -   250 GR  | $500
+Pedido 17 | Bebida cola 500 ml   -     1 UN  | $850
+Salidas registradas: 9 | costo de los insumos consumidos: $6,720
+Existencias finales en local 1:
+Pan de hamburguesa        27 UN  (minimo 10)
+Carne de vacuno         7210 GR  (minimo 1500)
+Pechuga de pollo        5780 GR  (minimo 1200)
+Queso cheddar           2910 GR  (minimo 500)
+Lechuga                 3875 GR  (minimo 800)
+Tomate                  3880 GR  (minimo 800)
+Papa                   11500 GR  (minimo 2500)
+Bebida cola 500 ml        49 UN  (minimo 10)
+Insumos bajo minimo en toda la cadena: 0
+
+--- 4. KDS ---
+Pedido 16 (LISTO) | Hamburguesa Clásica      LISTO      inicio 23:33:09 listo 23:33:09
+Pedido 16 (LISTO) | Papas Fritas             LISTO      inicio 23:33:09 listo 23:33:09
+Pedido 17 (ENTREGADO) | Pollo Grill con Papas    LISTO      inicio 23:33:09 listo 23:33:09
+Pedido 17 (ENTREGADO) | Bebida Cola 500 ml       LISTO      inicio 23:33:09 listo 23:33:09
+
+--- 5. MERMA ---
+MERMA - local 1 hoy 27-10-2026
+23:33 Carne de vacuno        250 GR  $3,000 | Vencimiento en camara de frio
+23:33 Lechuga                 50 GR  $200 | Deterioro durante almacenamiento
+Mermas de hoy: 2 | $3,200 | consumo de hoy $12,940 | KPI 24.73% (SOBRE META)
+Locales con mas merma hoy (funcion fn_porcentaje_merma dentro del SELECT):
+1 - Sabores Urbanos Costanera       24.73%
+2 - Sabores Urbanos Parque Arauco   sin consumo
+3 - Sabores Urbanos Plaza Egaña     sin consumo
+REPORTE DE MERMA 27-10-2026 al 27-10-2026 (meta < 4%)
+1 - Sabores Urbanos Costanera      consumo $    12,940 merma $    3,200 KPI      24.73%  SOBRE META
+2 - Sabores Urbanos Parque Arauco  consumo $         0 merma $        0 KPI sin consumo
+3 - Sabores Urbanos Plaza Egaña    consumo $         0 merma $        0 KPI sin consumo
+4 - Sabores Urbanos Vespucio       consumo $         0 merma $        0 KPI sin consumo
+5 - Sabores Urbanos Plaza Oeste    consumo $         0 merma $        0 KPI sin consumo
+6 - Sabores Urbanos Plaza Norte    consumo $         0 merma $        0 KPI sin consumo
+7 - Sabores Urbanos Alto Las Conde consumo $         0 merma $        0 KPI sin consumo
+8 - Sabores Urbanos Florida Center consumo $         0 merma $        0 KPI sin consumo
+9 - Sabores Urbanos Tobalaba       consumo $         0 merma $        0 KPI sin consumo
+Local con mayor merma: Sabores Urbanos Costanera (24.73%)
+
+--- 6. FACTURACION ---
+Pago pedido 16: $12400 con APP_DELIVERY
+Pago pedido 17: $13700 con DEBITO
+Boleta 6 pedido 16 | AFECTA | neto $10420 iva $1980 total $12400 | DTE ACEPTADA
+Boleta 7 pedido 17 | AFECTA | neto $11513 iva $2187 total $13700 | DTE ACEPTADA
+
+--- RESUMEN DE LA SIMULACION ---
+Pedidos creados                      2  (esperado 2)  OK
+Detalles LISTO en cocina             4  (esperado 4)  OK
+Salidas de stock                     9  (esperado 9)  OK
+Mermas registradas hoy               2  (esperado al menos 1)  OK
+Pagos registrados                    2  (esperado 2)  OK
+Boletas ACEPTADAS                    2  (esperado 2)  OK
+Mesa de salon liberada               1  (esperado 1)  OK
+(el local 1 ya tenia mermas hoy, por ejemplo las de las pruebas del modulo; la de esta simulacion es una de ellas)
+
+Transaccion confirmada (COMMIT).
+
+PL/SQL procedure successfully completed.
+

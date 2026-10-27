@@ -1,0 +1,30 @@
+CREATE USER SABORES_ADMIN
+            *
+ERROR at line 1:
+ORA-01920: user name 'SABORES_ADMIN' conflicts with another user or role name
+
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User altered.
+

@@ -1,0 +1,56 @@
+
+Package created.
+
+
+Package created.
+
+
+Package body created.
+
+========================================
+SIMULACIÓN BOLETAS Y FACTURAS
+========================================
++ Hamburguesa Clásica (AFECTO) $8500
++ Colación Convenio Pollo (EXENTO) $7500
+
+--- CÁLCULOS DEL PEDIDO 14 ---
+Total: $16000 | Afecto: $8500 | Exento: $7500
+Neto: $14643 | IVA: $1357
+
+--- PRUEBA: PAGO INCOMPLETO ---
+Pago registrado: $8000 - Pedido 14
+ERROR: El pago no cubre el total. Pagado: $8000 / Requerido: $16000
+-> Boleta no emitida: falta completar el pago.
+
+--- PRUEBA: PAGO COMPLETO Y EMISIÓN ---
+Pago registrado: $8000 - Pedido 14
+Pago $8000 con DEBITO
+Pago $8000 con EFECTIVO
+Boleta 5 emitida (AFECTA) - Neto: $14643 IVA: $1357 Total: $16000
+
+--- PRUEBA: BOLETA DUPLICADA ---
+ERROR: Ya existe una boleta para el pedido 14
+-> Rechazada: el pedido ya tiene boleta.
+
+--- PRUEBA: ESTADO DTE ---
+Boleta 5 -> estado DTE: ACEPTADA
+ERROR: Estado DTE invalido. Use PENDIENTE, ACEPTADA o RECHAZADA.
+-> Rechazado: ANULADA no es un estado DTE permitido.
+
+--- PRUEBA: PAGO CON MONTO CERO ---
+Error en sp_registrar_pago: ORA-20310: El monto del pago debe ser mayor a 0.
+-> Rechazado: el monto debe ser mayor a cero.
+
+--- PRUEBA: PEDIDO SIN DETALLES ---
+ERROR: El pedido 15 no tiene detalles.
+-> Rechazado: el pedido no tiene productos.
+
+--- PRUEBA: PEDIDO INEXISTENTE ---
+ERROR: El pedido 999999 no existe.
+-> Rechazado: el pedido 999999 no existe.
+
+--- BOLETA FINAL ---
+Boleta 5 | AFECTA | Neto: $14643 | IVA: $1357 | Total: $16000 | DTE: ACEPTADA
+
+PL/SQL procedure successfully completed.
+

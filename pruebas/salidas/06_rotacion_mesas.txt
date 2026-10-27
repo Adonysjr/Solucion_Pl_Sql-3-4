@@ -1,0 +1,55 @@
+
+Package created.
+
+
+Package created.
+
+
+Package body created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+========================================
+SIMULACIÓN ROTACIÓN DE MESAS
+========================================
+
+--- APERTURA DE PEDIDOS (trg_ocupar_mesa) ---
+Pedido 8 -> Mesa 1: OCUPADA
+Pedido 9 -> Mesa 2: OCUPADA
+Pedido 10 -> Mesa 3: OCUPADA
+
+--- PRUEBA: MESA OCUPADA ---
+Error en trg_ocupar_mesa: ORA-20404: La mesa 1 ya se encuentra ocupada.
+-> Rechazado: la mesa ya tiene un pedido abierto.
+
+--- CIERRE DE PEDIDOS (trg_liberar_mesa) ---
+Pedido 8 | duración: 50 | Mesa 1: LIBRE
+Pedido 9 | duración: 35 | Mesa 2: LIBRE
+Pedido 10 | duración: abierto | Mesa 3: OCUPADA
+
+--- REPORTE DE ROTACIÓN ---
+ROTACION DE MESAS - Local 1 - 27-10-2026 (12:00 a 15:00)
+======================================================
+Pedido 8 - Mesa 1 - Duracion: 50 min
+Pedido 9 - Mesa 2 - Duracion: 35 min
+Pedido 10 - Mesa 3 - AUN NO CIERRA
+======================================================
+Duracion promedio de atencion: 42.5 min
+Rotacion de mesas del periodo: .75
+
+--- PRUEBA: RANGO HORARIO INVÁLIDO ---
+ERROR: La hora de inicio debe ser menor a la hora de fin.
+Resultado: sin cálculo
+
+--- PRUEBA: LOCAL SIN MESAS ---
+ERROR: El local 2 no tiene mesas registradas.
+Resultado: sin cálculo
+
+Pedido 10 cerrado: su mesa queda libre.
+
+PL/SQL procedure successfully completed.
+

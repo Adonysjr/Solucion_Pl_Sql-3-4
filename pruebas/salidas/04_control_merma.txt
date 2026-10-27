@@ -1,0 +1,66 @@
+
+Package created.
+
+
+Package body created.
+
+
+Trigger created.
+
+Merma registrada: 250 GR de Carne de vacuno en local 1 - motivo: Vencimiento en camara de frio
+
+PL/SQL procedure successfully completed.
+
+La cantidad de merma debe ser mayor a cero (recibido: -5).
+DATOS INVALIDOS: la merma no se registra.
+
+PL/SQL procedure successfully completed.
+
+Stock insuficiente para registrar merma de Carne de vacuno en local 1: disponible 7390 GR, merma solicitada 999999.
+MERMA RECHAZADA: la merma no se registra.
+
+PL/SQL procedure successfully completed.
+
+Local 1: merma ultimos 30 dias = 36.49%
+
+PL/SQL procedure successfully completed.
+
+REPORTE DE MERMA 27-09-2026 al 27-10-2026 (meta < 4%)
+1 - Sabores Urbanos Costanera      consumo $    10,140 merma $    3,700 KPI      36.49%  SOBRE META
+2 - Sabores Urbanos Parque Arauco  consumo $         0 merma $        0 KPI sin consumo
+3 - Sabores Urbanos Plaza Egaña    consumo $         0 merma $        0 KPI sin consumo
+4 - Sabores Urbanos Vespucio       consumo $         0 merma $        0 KPI sin consumo
+5 - Sabores Urbanos Plaza Oeste    consumo $         0 merma $        0 KPI sin consumo
+6 - Sabores Urbanos Plaza Norte    consumo $         0 merma $        0 KPI sin consumo
+7 - Sabores Urbanos Alto Las Conde consumo $         0 merma $        0 KPI sin consumo
+8 - Sabores Urbanos Florida Center consumo $         0 merma $        0 KPI sin consumo
+9 - Sabores Urbanos Tobalaba       consumo $         0 merma $        0 KPI sin consumo
+Local con mayor merma: Sabores Urbanos Costanera (36.49%)
+
+PL/SQL procedure successfully completed.
+
+MERMA RECHAZADA POR EL TRIGGER: ORA-20042: Toda merma debe registrarse con un motivo.
+
+PL/SQL procedure successfully completed.
+
+
+META_MERMA_PCT
+--------------
+             4
+
+1 row selected.
+
+REPORTE DE MERMA 27-10-2026 al 27-10-2026 (meta < 4%)
+1 - Sabores Urbanos Costanera      consumo $     6,220 merma $    3,000 KPI      48.23%  SOBRE META
+2 - Sabores Urbanos Parque Arauco  consumo $         0 merma $        0 KPI sin consumo
+3 - Sabores Urbanos Plaza Egaña    consumo $         0 merma $        0 KPI sin consumo
+4 - Sabores Urbanos Vespucio       consumo $         0 merma $        0 KPI sin consumo
+5 - Sabores Urbanos Plaza Oeste    consumo $         0 merma $        0 KPI sin consumo
+6 - Sabores Urbanos Plaza Norte    consumo $         0 merma $        0 KPI sin consumo
+7 - Sabores Urbanos Alto Las Conde consumo $         0 merma $        0 KPI sin consumo
+8 - Sabores Urbanos Florida Center consumo $         0 merma $        0 KPI sin consumo
+9 - Sabores Urbanos Tobalaba       consumo $         0 merma $        0 KPI sin consumo
+Local con mayor merma: Sabores Urbanos Costanera (48.23%)
+
+PL/SQL procedure successfully completed.
+

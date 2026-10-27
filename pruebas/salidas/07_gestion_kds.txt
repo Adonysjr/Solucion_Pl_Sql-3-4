@@ -1,0 +1,56 @@
+
+Package created.
+
+
+Package body created.
+
+
+Trigger created.
+
+========================================
+SIMULACIÓN GESTION KDS
+========================================
+
+--- CÁLCULOS KDS ---
+Pedido 12 | espera: 20 min | preparación: 13 min | prioridad: 29
+Pedido 13 | espera: 10 min | preparación: 5 min | prioridad: 9
+
+--- INGRESO A COCINA ---
+Capacidad disponible: 10
+ID PEDIDO:    12
+PUNTAJE:      29
+TOTAL PLATOS: 3
+-----------------------------
+UPDATE pedido id: 12 NUEVO ESTADO: PREPARANDO
+Capacidad disponible: 7
+-----------------------------
+ID PEDIDO:    7
+PUNTAJE:      13
+TOTAL PLATOS: 2
+-----------------------------
+UPDATE pedido id: 7 NUEVO ESTADO: PREPARANDO
+Capacidad disponible: 5
+-----------------------------
+ID PEDIDO:    13
+PUNTAJE:      9
+TOTAL PLATOS: 2
+-----------------------------
+UPDATE pedido id: 13 NUEVO ESTADO: PREPARANDO
+Capacidad disponible: 3
+-----------------------------
+ID PEDIDO:    5
+PUNTAJE:      8
+TOTAL PLATOS: 2
+-----------------------------
+UPDATE pedido id: 5 NUEVO ESTADO: PREPARANDO
+Capacidad disponible: 1
+-----------------------------
+
+--- FINALIZACIÓN DE PLATOS ---
+
+--- RESULTADO DEL TRIGGER ---
+Pedido 12 | platos: 2/3 | estado: 2 -> EN_PREPARACION
+Pedido 13 | platos: 2/2 | estado: 3 -> LISTO
+
+PL/SQL procedure successfully completed.
+

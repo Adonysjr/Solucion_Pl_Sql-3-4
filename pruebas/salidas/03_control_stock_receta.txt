@@ -1,0 +1,41 @@
+
+Package created.
+
+
+Package body created.
+
+
+Trigger created.
+
+=== Pedido 5 creado (2 x producto 1), confirmando ===
+2 x Hamburguesa Clásica          -> Pan de hamburguesa   -2 UN
+2 x Hamburguesa Clásica          -> Carne de vacuno      -360 GR
+2 x Hamburguesa Clásica          -> Queso cheddar        -60 GR
+2 x Hamburguesa Clásica          -> Lechuga              -50 GR
+2 x Hamburguesa Clásica          -> Tomate               -80 GR
+Pedido 5 confirmado: 5 descuentos de insumo registrados.
+
+PL/SQL procedure successfully completed.
+
+ALERTA DE STOCK: 1 insumo(s) bajo el minimo tras esta operacion.
+=== Pedido 6 creado con stock casi nulo del insumo 1, confirmando ===
+Stock insuficiente en local 1 para el pedido 6:
+- Pan de hamburguesa (requiere 1 UN, hay .001)
+VENTA BLOQUEADA: no se confirma el pedido por falta de stock.
+
+PL/SQL procedure successfully completed.
+
+El pedido 999999 no existe.
+PEDIDO RECHAZADO: no se puede confirmar.
+
+PL/SQL procedure successfully completed.
+
+El pedido 5 ya fue confirmado: tiene 5 salida(s) de stock registradas.
+DOBLE CONFIRMACION RECHAZADA: el pedido 5 ya estaba confirmado.
+
+PL/SQL procedure successfully completed.
+
+Insumos bajo stock minimo en la cadena: 0
+
+PL/SQL procedure successfully completed.
+

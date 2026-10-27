@@ -1,0 +1,18 @@
+
+Package created.
+
+
+Package body created.
+
+========================================
+SIMULACIÓN INTEGRACIÓN EXTERNA
+========================================
+Pedido externo registrado correctamente. ID: 7
+Pedido: 7 | Externo: SIM-RAP-DEMO-001 | Items: 2 | Total: $20000
+Canal delivery valido.
+Pedido externo encontrado correctamente.
+--- PRUEBA DE PEDIDO DUPLICADO ---
+El pedido externo SIM-RAP-DEMO-001 ya fue registrado para el canal 3.
+
+PL/SQL procedure successfully completed.
+
